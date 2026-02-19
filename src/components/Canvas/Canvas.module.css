@@ -6,6 +6,8 @@
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
+	background-color: #001737;
+	color: white;
 }
 
 .container > div {

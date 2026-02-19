@@ -10,6 +10,9 @@ import Experience from "../Pages/2_Experience/ExperiencePage";
 import Projects from "../Pages/3_Projects/ProjectsPage";
 
 const pages: ((
+	//Page array for the different pages available
+	//note, "fontSize: 30" is just for test purposes
+
 	props: AnimatedProps<{ style: CSSProperties }>,
 ) => React.ReactElement)[] = [
 	({ style }) => (
@@ -30,9 +33,11 @@ const pages: ((
 ];
 
 function Canvas() {
-	const [index, set] = useState(0);
-	const onClick = () => set((state) => (state + 1) % 3);
+	//Animation Code Begins
+	const [index, setIndex] = useState(0);
+
 	const transRef = useSpringRef();
+
 	const transitions = useTransition(index, {
 		ref: transRef,
 		keys: null,
@@ -40,12 +45,15 @@ function Canvas() {
 		enter: { opacity: 1, transform: "translate3d(0,0%,0)" },
 		leave: { opacity: 0, transform: "translate3d(0,-50%,0)" },
 	});
+
 	useEffect(() => {
 		transRef.start();
 	}, [index]);
+	//Animation Code Ends
+
 	return (
-		<Layout>
-			<div className={styles.container} onClick={onClick}>
+		<Layout onNav={setIndex}>
+			<div className={styles.container}>
 				{transitions((style, i) => {
 					const Page = pages[i];
 					return <Page style={style} />;
