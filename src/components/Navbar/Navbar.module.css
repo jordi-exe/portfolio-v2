@@ -1,9 +1,9 @@
 .navContainer {
 	display: flex;
 	width: 20rem;
+	height: 100%;
 	background-color: white;
 	flex-direction: column;
-	justify-items: center;
 }
 
 .navHeader {
@@ -18,6 +18,15 @@
 	display: flex;
 	padding: 1rem;
 	flex-direction: column;
+	margin-bottom: auto;
+	align-items: center;
+}
+
+.navFooter {
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
 .navButtons {
@@ -41,11 +50,28 @@ button:focus-visible {
 	outline: 2px solid black;
 }
 
-.circle {
-	height: 6rem;
-	width: 6rem;
-	background-color: forestgreen;
-	border-radius: 50%;
-	align-self: center;
+a {
+	all: unset;
+	transition-duration: 0.4s;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+a:focus-visible {
+	outline: 2px solid black;
+}
+
+.faIcon {
+	color: #001737;
+	transition-duration: 0.4s;
+}
+
+.faIcon:hover {
+	color: #0251c0;
+}
+
+.avatar {
 	margin-bottom: 2rem;
 }

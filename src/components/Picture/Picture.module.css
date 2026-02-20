@@ -1,0 +1,7 @@
+.Default {
+	object-fit: contain;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	border: 0.4rem solid black;
+}

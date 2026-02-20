@@ -1,4 +1,8 @@
 import styles from "./Navbar.module.css";
+import Profile from "../Picture/Picture";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSquareLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 type NavbarProps = {
 	onNav: (index: number) => void;
@@ -13,7 +17,9 @@ function Navbar({ onNav }: NavbarProps) {
 			</div>
 
 			<div className={styles.navBody}>
-				<div className={styles.circle}></div>
+				<div className={styles.avatar}>
+					<Profile src="/images/profile-img.png" className="Default" />
+				</div>
 
 				<div className={styles.navButtons}>
 					<button onClick={() => onNav(0)}>About</button>
@@ -21,6 +27,23 @@ function Navbar({ onNav }: NavbarProps) {
 					<button onClick={() => onNav(2)}>Projects</button>
 					<button>Contact Info</button>
 				</div>
+			</div>
+
+			<div className={styles.navFooter}>
+				<a href="https://github.com/jordi-exe" target="_blank">
+					<FontAwesomeIcon
+						icon={faGithub}
+						size="2xl"
+						className={styles.faIcon}
+					/>
+				</a>
+				<a href="https://www.linkedin.com/in/jorge-romero3219/" target="_blank">
+					<FontAwesomeIcon
+						icon={faSquareLinkedin}
+						size="2xl"
+						className={styles.faIcon}
+					/>
+				</a>
 			</div>
 		</div>
 	);
