@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Gontserrat";
+	src:
+		local("Gontserrat-Regular"),
+		url("./assets/fonts/Gontserrat/Gontserrat-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gontserrat";
+	src:
+		local("Gontserrat-Italic"),
+		url("./assets/fonts/Gontserrat/Gontserrat-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gontserrat";
+	src:
+		local("Gontserrat-Bold"),
+		url("./assets/fonts/Gontserrat/Gontserrat-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gontserrat";
+	src:
+		local("Gontserrat-BoldItalic"),
+		url("./assets/fonts/Gontserrat/Gontserrat-BoldItalic.ttf")
+			format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}

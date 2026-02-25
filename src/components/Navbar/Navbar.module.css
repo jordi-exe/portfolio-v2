@@ -11,7 +11,7 @@
 	width: 100%;
 	justify-items: center;
 	background-color: rgb(223, 216, 216);
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .navBody {
@@ -33,12 +33,13 @@
 	display: flex;
 	font-size: 1.5em;
 	flex-flow: column nowrap;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
 button {
 	all: unset;
 	font-style: italic;
+	font-weight: bold;
 }
 
 button:hover {
@@ -63,6 +64,11 @@ a:focus-visible {
 	outline: 2px solid black;
 }
 
+h3 {
+	font-style: italic;
+	font-weight: normal;
+}
+
 .faIcon {
 	color: #001737;
 	transition-duration: 0.4s;
@@ -73,5 +79,5 @@ a:focus-visible {
 }
 
 .avatar {
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 }
