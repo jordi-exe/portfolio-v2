@@ -2,23 +2,23 @@
 	display: flex;
 	width: 20rem;
 	height: 100%;
-	background-color: white;
 	flex-direction: column;
+	background-color: white;
 }
 
 .navHeader {
-	padding: 0.5rem;
 	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
 	justify-items: center;
 	background-color: rgb(223, 216, 216);
-	margin-bottom: 0.5rem;
 }
 
 .navBody {
 	display: flex;
 	padding: 1rem;
-	flex-direction: column;
 	margin-bottom: auto;
+	flex-direction: column;
 	align-items: center;
 }
 
@@ -31,9 +31,9 @@
 
 .navButtons {
 	display: flex;
-	font-size: 1.5em;
 	flex-flow: column nowrap;
 	gap: 1.5rem;
+	font-size: 1.5em;
 }
 
 button {

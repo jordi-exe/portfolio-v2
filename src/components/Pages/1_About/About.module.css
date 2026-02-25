@@ -1,0 +1,44 @@
+.pageContainer {
+	display: flex;
+	height: 100vh;
+	padding: 2rem;
+	flex-direction: column;
+}
+
+.pageBody {
+	flex: auto;
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pageRow {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.pageColumn {
+	display: flex;
+	width: 50%;
+	flex-flow: column wrap;
+	gap: 2rem;
+}
+
+.shields {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+ul {
+	margin-left: 1em;
+	font-size: 1.25rem;
+}

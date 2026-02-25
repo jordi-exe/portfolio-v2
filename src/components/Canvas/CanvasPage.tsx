@@ -16,17 +16,17 @@ const pages: ((
 	props: AnimatedProps<{ style: CSSProperties }>,
 ) => React.ReactElement)[] = [
 	({ style }) => (
-		<animated.div style={{ ...style, fontSize: 30 }}>
+		<animated.div style={style}>
 			<About />
 		</animated.div>
 	),
 	({ style }) => (
-		<animated.div style={{ ...style, fontSize: 30 }}>
+		<animated.div style={style}>
 			<Experience />
 		</animated.div>
 	),
 	({ style }) => (
-		<animated.div style={{ ...style, fontSize: 30 }}>
+		<animated.div style={style}>
 			<Projects />
 		</animated.div>
 	),
