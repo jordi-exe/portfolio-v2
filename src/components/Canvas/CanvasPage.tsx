@@ -11,8 +11,6 @@ import Projects from "../Pages/3_Projects/ProjectsPage";
 
 const pages: ((
 	//Page array for the different pages available
-	//note, "fontSize: 30" is just for test purposes
-
 	props: AnimatedProps<{ style: CSSProperties }>,
 ) => React.ReactElement)[] = [
 	({ style }) => (

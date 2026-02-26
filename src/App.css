@@ -11,8 +11,12 @@ body,
 #root {
 	width: 100%;
 	height: 100%;
-	font-size: 16px;
+
 	font-family: Gontserrat;
+}
+
+html {
+	font-size: clamp(14px, calc(16px + (100vw - 1920px) * 0.002), 20px);
 }
 
 body {
