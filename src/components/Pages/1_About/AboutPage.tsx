@@ -7,7 +7,7 @@ function About() {
 	const about = useContext(AboutContext);
 
 	return (
-		<div className={styles.pageContainer}>
+		<div className="pageContainer">
 			<h1>About Me</h1>
 
 			<div className={styles.pageBody}>
