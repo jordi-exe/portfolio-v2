@@ -16,7 +16,7 @@ body,
 }
 
 html {
-	font-size: clamp(14px, calc(16px + (100vw - 1920px) * 0.002), 20px);
+	font-size: clamp(12px, calc(16px + (100vw - 1920px) * 0.002), 20px);
 }
 
 body {

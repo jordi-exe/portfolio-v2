@@ -8,5 +8,5 @@
 
 .logo {
 	width: auto;
-	height: 5.5rem;
+	height: clamp(2rem, 5vw, 5.5rem);
 }
