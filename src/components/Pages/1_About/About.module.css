@@ -4,6 +4,15 @@
 	margin-bottom: 5rem;
 	flex-direction: column;
 	justify-content: space-between;
+
+	p {
+		font-size: 1.25rem;
+	}
+
+	ul {
+		margin-left: 1em;
+		font-size: 1.25rem;
+	}
 }
 
 .pageRow {
@@ -26,13 +35,4 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 5rem;
-}
-
-p {
-	font-size: 1.25rem;
-}
-
-ul {
-	margin-left: 1em;
-	font-size: 1.25rem;
 }

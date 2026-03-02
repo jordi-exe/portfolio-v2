@@ -10,3 +10,11 @@
 	width: auto;
 	height: clamp(2rem, 5vw, 5.5rem);
 }
+
+.company {
+	object-fit: contain;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 20%;
+	border: 0.25rem solid black;
+}
