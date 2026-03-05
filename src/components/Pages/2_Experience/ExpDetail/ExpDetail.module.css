@@ -1,0 +1,52 @@
+.slot {
+	display: flex;
+	height: 14rem;
+	max-height: 14rem;
+	justify-content: space-between;
+	overflow-y: hidden;
+}
+
+.slot:hover .logoSlot,
+.slot:hover .detailSlot {
+	background-color: #004e8c;
+}
+
+.logoSlot {
+	display: flex;
+	aspect-ratio: 1/1;
+	height: 100%;
+	padding: 1rem;
+	align-items: center;
+	flex-flow: column nowrap;
+	gap: 0.5rem;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.detailSlot {
+	display: flex;
+	width: 100%;
+	padding: 1rem;
+	flex-direction: column;
+	border-radius: 0 1rem 1rem 0;
+
+	p {
+		flex: 1;
+		overflow: hidden;
+	}
+}
+
+.techShields {
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+}
+
+.sampleSlot {
+	display: flex;
+	width: 25rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	background-color: #004e8c;
+	overflow: hidden;
+}

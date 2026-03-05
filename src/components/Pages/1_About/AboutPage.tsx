@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 import RenderLogos from "./RenderLogos/RenderLogos";
-import { AboutContext } from "../../../lib/context/dataContext";
 import { useContext } from "react";
+import { AboutContext } from "../../../lib/context/dataContext";
 
 function About() {
 	const about = useContext(AboutContext);
@@ -18,8 +18,8 @@ function About() {
 						<div>
 							<h2>Qualifications</h2>
 							<ul>
-								{about.qualification?.map((item, idx) => (
-									<li key={idx}>{item.degree}</li>
+								{about.qualification?.map((item, index) => (
+									<li key={index}>{item.degree}</li>
 								))}
 							</ul>
 						</div>
@@ -43,8 +43,8 @@ function About() {
 						<div>
 							<h2>Skills</h2>
 							<ul>
-								{about.skills?.map((item, idx) => (
-									<li key={idx}>{item.point}</li>
+								{about.skills?.map((item, index) => (
+									<li key={index}>{item.point}</li>
 								))}
 							</ul>
 						</div>

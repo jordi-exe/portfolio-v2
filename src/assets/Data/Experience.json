@@ -1,0 +1,45 @@
+[
+	{
+		"company": "test company",
+		"logo": "/images/profile-img.png",
+		"date": "Jan '00 - March '00",
+
+		"role": "Frontend Developer",
+		"summary": "Did stuff for company",
+		"badges": [
+			{
+				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white&labelColor=35495E"
+			},
+			{
+				"src": "https://img.shields.io/badge/Nuxt-00DC82?style=flat&logo=nuxt&logoColor=white&labelColor=35495E"
+			},
+			{
+				"src": "https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white&labelColor=35495E"
+			},
+			{
+				"src": "https://img.shields.io/badge/CSS-663399?style=flat&logo=CSS&logoColor=white&labelColor=35495E"
+			},
+			{
+				"src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white&labelColor=35495E"
+			}
+		],
+		"sample": "/images/experience/eebz.webp"
+	},
+	{
+		"company": "test company 2",
+		"logo": "/images/profile-img.png",
+		"date": "Jan '01 - March '02",
+
+		"role": "Frontend Developer",
+		"summary": "Did stuff for company 2",
+		"badges": [
+			{
+				"src": "https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"
+			},
+			{
+				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white"
+			}
+		],
+		"sample": "/images/experience/eebz.webp"
+	}
+]

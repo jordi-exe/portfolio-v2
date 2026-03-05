@@ -4,6 +4,11 @@
 	height: 100%;
 	flex-direction: column;
 	background-color: white;
+
+	h3 {
+		font-style: italic;
+		font-weight: normal;
+	}
 }
 
 .navHeader {
@@ -62,11 +67,6 @@ a:hover {
 
 a:focus-visible {
 	outline: 2px solid black;
-}
-
-h3 {
-	font-style: italic;
-	font-weight: normal;
 }
 
 .faIcon {
