@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTransition, animated, useSpringRef } from "@react-spring/web";
 import type { CSSProperties } from "react";
 import type { AnimatedProps } from "@react-spring/web";
@@ -49,9 +49,32 @@ function Canvas() {
 	}, [index]);
 	//Animation Code Ends
 
+	//Gradient Mouse Follow
+	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const containerRef = useRef<HTMLDivElement>(null);
+
+	const handleMouseMove = (e: React.MouseEvent) => {
+		const rect = containerRef.current?.getBoundingClientRect();
+
+		if (!rect) return;
+
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+
+		setMousePosition({ x, y });
+	};
+	//GMF Ends
+
 	return (
 		<Layout onNav={setIndex}>
-			<div className={styles.container}>
+			<div
+				ref={containerRef}
+				className={styles.container}
+				onMouseMove={handleMouseMove}
+				style={{
+					backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #004BB3, #001737 20%)`,
+				}}
+			>
 				{transitions((style, i) => {
 					const Page = pages[i];
 					return <Page style={style} />;
