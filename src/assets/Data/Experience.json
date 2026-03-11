@@ -1,12 +1,12 @@
 [
 	{
 		"exp": "Work",
-		"company": "test company",
-		"logo": "/images/profile-img.png",
-		"date": "Jan '00 - March '00",
+		"company": "Eebz Ltd",
+		"logo": "/logos/work/eebz/eebz_logo.webp",
+		"date": "Jan '25 - March '25",
 
-		"role": "Frontend Developer",
-		"summary": "Did stuff for company",
+		"role": "Freelance Front End Developer",
+		"summary": "Took ownership of building and optimising a responsive multi-page marketing website, using VueJS, Nuxt 3 and Bootstrap-Vue/Bootstrap-Vue-Next, with a strong focus on SEO, performance, and cross-device compatibility. Worked closely with senior leadership to define and prioritise website objectives, converting strategic requirements into deliverables completed ahead of schedule.",
 		"badges": [
 			{
 				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white&labelColor=35495E"
@@ -24,42 +24,51 @@
 				"src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white&labelColor=35495E"
 			}
 		],
-		"sample": "/images/experience/eebz.webp"
+		"sample": "/images/experience/eebz/eebz.webp"
 	},
 	{
 		"exp": "Work",
-		"company": "test company 2",
-		"logo": "/images/profile-img.png",
-		"date": "Jan '01 - March '02",
+		"company": "ICA",
+		"logo": "/logos/work/ICA/ICA_logo.webp",
+		"date": "Aug '22 - Feb '23",
 
-		"role": "Frontend Developer",
-		"summary": "Did stuff for company 2",
+		"role": "Graphic Designer Intern",
+		"summary": "Delivered visual design assets (posters, animations, and video content) for a government-affiliated creative studio, supporting multiple public sector organisations. Managed social media publishing strategy alongside fellow co-workers by analysing timing, platforms, and audience engagement to maximise content reach.",
 		"badges": [
 			{
-				"src": "https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"
+				"src": "https://img.shields.io/badge/Illustrator-ED2224?style=flat"
 			},
 			{
-				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white"
+				"src": "https://img.shields.io/badge/Photoshop-ED2224?style=flat"
+			},
+			{
+				"src": "https://img.shields.io/badge/After_Effects-ED2224?style=flat"
+			},
+			{
+				"src": "https://img.shields.io/badge/Premiere_Pro-ED2224?style=flat"
 			}
 		],
-		"sample": "/images/experience/eebz.webp"
+		"sample": "/images/experience/ICA/ICA_sample.webp"
 	},
 	{
 		"exp": "Personal",
-		"company": "personal group",
-		"logo": "/images/profile-img.png",
-		"date": "Jan '01 - March '02",
+		"company": "Journey Team",
+		"logo": "/logos/personal/journey_team/JT_logo.webp",
+		"date": "May '24 - Present",
 
-		"role": "3D modeler",
-		"summary": "Did stuff for personal group",
+		"role": "Co-Director/Lead 3D Modeler",
+		"summary": "Co-directing and managing a team developing a Mario & Luigi fangame, serving as Lead 3D Artist responsible for asset creation, task management, and project organization to ensure consistent progress and quality.",
 		"badges": [
 			{
-				"src": "https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"
+				"src": "https://img.shields.io/badge/Blender-E87D0D?style=flat&logo=Blender&logoColor=white&labelColor=35495E"
 			},
 			{
-				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white"
+				"src": "https://img.shields.io/badge/Unity-white?style=flat&logo=Unity&logoColor=white&labelColor=35495E"
+			},
+			{
+				"src": "https://img.shields.io/badge/Substance_3D_Painter-ED2224?style=flat"
 			}
 		],
-		"sample": "/images/experience/eebz.webp"
+		"sample": "/images/experience/journey_team/StarJourney.png"
 	}
 ]

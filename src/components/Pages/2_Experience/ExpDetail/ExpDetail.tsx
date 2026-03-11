@@ -17,7 +17,7 @@ function ExpDetail({ switchValue }: ExpProps) {
 			<div className={styles.logoSlot}>
 				<h4>{item.date}</h4>
 				<Picture src={item.logo} className="company" />
-				<div>{item.company}</div>
+				<h3>{item.company}</h3>
 			</div>
 			<div className={styles.detailSlot}>
 				<h3>{item.role}</h3>

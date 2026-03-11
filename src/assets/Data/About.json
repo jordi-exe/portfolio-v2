@@ -15,20 +15,20 @@
 	],
 
 	"logoTech": [
-		{ "src": "/logos/HTML5.svg", "className": "logo" },
-		{ "src": "/logos/CSS.svg", "className": "logo" },
-		{ "src": "/logos/JS.svg", "className": "logo" },
-		{ "src": "/logos/TS.svg", "className": "logo" },
-		{ "src": "/logos/React.svg", "className": "logo" },
-		{ "src": "/logos/Bootstrap.svg", "className": "logo" }
+		{ "src": "/logos/about_logos/HTML5.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/CSS.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/JS.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/TS.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/React.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Bootstrap.svg", "className": "logo" }
 	],
 	"logoApp": [
-		{ "src": "/logos/Blender.svg", "className": "logo" },
-		{ "src": "/logos/Unity.svg", "className": "logo" },
-		{ "src": "/logos/Affinity.svg", "className": "logo" },
-		{ "src": "/logos/Illustrator.svg", "className": "logo" },
-		{ "src": "/logos/Photoshop.svg", "className": "logo" },
-		{ "src": "/logos/Premiere.svg", "className": "logo" },
-		{ "src": "/logos/AfterEffects.svg", "className": "logo" }
+		{ "src": "/logos/about_logos/Blender.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Unity.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Affinity.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Illustrator.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Photoshop.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/Premiere.svg", "className": "logo" },
+		{ "src": "/logos/about_logos/AfterEffects.svg", "className": "logo" }
 	]
 }
