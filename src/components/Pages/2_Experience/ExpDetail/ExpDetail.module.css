@@ -52,3 +52,9 @@
 	background-color: #004e8c;
 	overflow: hidden;
 }
+
+@media (max-width: 1366px) {
+	.sampleSlot {
+		display: none;
+	}
+}

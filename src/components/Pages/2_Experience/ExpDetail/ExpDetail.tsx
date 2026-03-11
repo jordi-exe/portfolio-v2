@@ -3,10 +3,16 @@ import Picture from "../../../Picture/Picture";
 import { useContext } from "react";
 import { ExpContext } from "../../../../lib/context/dataContext";
 
-function ExpDetail() {
+type ExpProps = {
+	switchValue: string;
+};
+
+function ExpDetail({ switchValue }: ExpProps) {
 	const exp = useContext(ExpContext);
 
-	return exp.map((item, index) => (
+	const experience = exp.filter((exp) => exp.exp === switchValue);
+
+	return experience.map((item, index) => (
 		<div key={index} className={styles.slot}>
 			<div className={styles.logoSlot}>
 				<h4>{item.date}</h4>

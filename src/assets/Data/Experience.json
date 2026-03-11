@@ -1,5 +1,6 @@
 [
 	{
+		"exp": "Work",
 		"company": "test company",
 		"logo": "/images/profile-img.png",
 		"date": "Jan '00 - March '00",
@@ -26,12 +27,31 @@
 		"sample": "/images/experience/eebz.webp"
 	},
 	{
+		"exp": "Work",
 		"company": "test company 2",
 		"logo": "/images/profile-img.png",
 		"date": "Jan '01 - March '02",
 
 		"role": "Frontend Developer",
 		"summary": "Did stuff for company 2",
+		"badges": [
+			{
+				"src": "https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"
+			},
+			{
+				"src": "https://img.shields.io/badge/VueJS-4FC08D?style=flat&logo=vue.js&logoColor=white"
+			}
+		],
+		"sample": "/images/experience/eebz.webp"
+	},
+	{
+		"exp": "Personal",
+		"company": "personal group",
+		"logo": "/images/profile-img.png",
+		"date": "Jan '01 - March '02",
+
+		"role": "3D modeler",
+		"summary": "Did stuff for personal group",
 		"badges": [
 			{
 				"src": "https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"
