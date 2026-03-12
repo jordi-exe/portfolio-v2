@@ -1,3 +1,5 @@
+import styles from "./Projects.module.css";
+
 function Projects() {
 	return <div>This is the Projects Page</div>;
 }

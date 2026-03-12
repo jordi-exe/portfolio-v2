@@ -25,7 +25,6 @@ function Navbar({ onNav }: NavbarProps) {
 					<button onClick={() => onNav(0)}>About</button>
 					<button onClick={() => onNav(1)}>Experience</button>
 					<button onClick={() => onNav(2)}>Projects</button>
-					<button>Contact Info</button>
 				</div>
 			</div>
 

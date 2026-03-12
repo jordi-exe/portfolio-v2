@@ -5,9 +5,9 @@ import type { AnimatedProps } from "@react-spring/web";
 
 import styles from "./Canvas.module.css";
 import Layout from "../Layout/Layout";
-import About from "../Pages/1_About/AboutPage";
-import Experience from "../Pages/2_Experience/ExperiencePage";
-import Projects from "../Pages/3_Projects/ProjectsPage";
+import About from "../Pages/0_About/AboutPage";
+import Experience from "../Pages/1_Experience/ExperiencePage";
+import Projects from "../Pages/2_Projects/ProjectsPage";
 
 const pages: ((
 	//Page array for the different pages available
