@@ -9,9 +9,9 @@
 button {
 	padding: 0.5rem 1rem;
 	border: none;
-	background-color: #005e85;
+	background-color: #0051a2;
 	cursor: pointer;
-	color: white;
+	color: #e8e5e9;
 }
 
 .left {
@@ -25,7 +25,7 @@ button {
 .active {
 	transition: background-color 0.25s;
 	outline: 0.25rem solid white;
-	color: white;
-	background-color: #3bd4ff;
+	color: #e8e5e9;
+	background-color: #4178df;
 	z-index: 1;
 }

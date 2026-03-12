@@ -14,19 +14,19 @@ function Switch<T extends string>({
 	onChange,
 }: SwitchProps<T>) {
 	return (
-		<div className={styles.switchContainer}>
+		<div className={`no-select ${styles.switchContainer}`}>
 			<button
 				className={`${styles.left} ${value === leftValue ? styles.active : ""}`}
 				onClick={() => onChange(leftValue)}
 			>
-				{leftValue}
+				<b>{leftValue}</b>
 			</button>
 
 			<button
 				className={`${styles.right} ${value === rightValue ? styles.active : ""}`}
 				onClick={() => onChange(rightValue)}
 			>
-				{rightValue}
+				<b>{rightValue}</b>
 			</button>
 		</div>
 	);

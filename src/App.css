@@ -6,6 +6,11 @@
 	padding: 0;
 }
 
+*::selection {
+	background: #aa1916;
+	color: #ffffff;
+}
+
 html,
 body,
 #root {
@@ -35,7 +40,7 @@ body {
 	height: 100vh;
 	padding: 2rem 4rem;
 	flex-direction: column;
-
+	color: #e8e5e9;
 	h1 {
 		font-size: 3.5rem;
 	}
@@ -55,4 +60,8 @@ body {
 		font-style: italic;
 		font-weight: normal;
 	}
+}
+
+.no-select {
+	user-select: none;
 }
