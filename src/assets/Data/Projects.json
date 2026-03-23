@@ -1,0 +1,99 @@
+[
+	{
+		"category": "latest",
+		"title": "Mario & Luigi: Star Journey",
+		"featuredImg": "/images/experience/journey_team/StarJourney.png",
+		"featuredSummary": "Lorem ipsum summary",
+		"summary": "Lorem ipsum summary",
+		"owner": "Journey Team",
+		"progress": "Currently being worked on",
+		"link": "www.google.com"
+	},
+	{
+		"category": "game dev",
+		"title": "Purga-Story Demo",
+		"featuredImg": "/images/Projects/GameDev/PurgaStory.png",
+		"featuredSummary": "A game jam game.",
+		"childImg": [
+			{ "img": "/images/Projects/GameDev/PurgaStory.png" },
+			{ "img": "/images/experience/journey_team/StarJourney.png" },
+			{ "img": "/images/Projects/GameDev/EverbloomDreams.png" }
+		],
+		"owner": "Group Jam",
+		"progress": "Complete"
+	},
+	{
+		"category": "game dev",
+		"title": "Everbloom Dreams: Elusion Session",
+		"featuredImg": "/images/Projects/GameDev/EverbloomDreams.png",
+		"featuredSummary": "A game jam game.",
+		"childImg": [{ "img": "" }, { "img": "" }, { "img": "" }],
+		"owner": "Group Jam",
+		"progress": "Complete"
+	},
+	{
+		"category": "game dev",
+		"title": "Mari La Mariposa",
+		"featuredImg": "/images/Projects/GameDev/Mari.gif",
+		"featuredSummary": "An edutainment mobile game teaching about the life cycle of a butterfly.",
+		"owner": "University Group Project",
+		"progress": "Complete"
+	},
+	{
+		"category": "game dev",
+		"title": "Slingball",
+		"featuredImg": "/images/Projects/GameDev/Slingball.gif",
+		"featuredSummary": "A prototype with the main goal being to launch the ball as far as possible, with upgradable skills in order to increase your maximum distance.",
+		"owner": "Solo [Prototype]",
+		"progress": "Complete"
+	},
+	{
+		"category": "game dev",
+		"title": "The Last Cave",
+		"featuredImg": "/images/Projects/GameDev/TheLastCave.gif",
+		"featuredSummary": "You find yourself awake in a small cave, with only a bed made of twigs and leaves, a kettle for water, and a campfire for warmth. You must survive, even if there are no predators around.",
+		"summary": "Will add summary later",
+		"owner": "Solo [Prototype]",
+		"progress": "Complete"
+	},
+	{
+		"category": "design",
+		"title": "Christmas Posters",
+		"featuredImg": "/images/Projects/QR/FestivalNavideno.jpg",
+		"featuredSummary": "A Christmas poster that was designed specifically to share on social media.",
+		"childImg": [
+			{ "img": "/images/Projects/QR/FestivalNavideno.jpg" },
+			{ "img": "/images/Projects/QR/RecitalNavideno.jpg" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "design",
+		"title": "Community Posters",
+		"featuredImg": "/images/Projects/QR/Poster1.jpg",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "/images/Projects/QR/Poster1.jpg" },
+			{ "img": "/images/Projects/QR/Poster2.jpg" },
+			{ "img": "/images/Projects/QR/Poster3.jpg" },
+			{ "img": "/images/Projects/QR/Poster4.jpg" },
+			{ "img": "/images/Projects/QR/MayaKaan.jpg" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "design",
+		"title": "Community Animations",
+		"featuredImg": "/images/Projects/QR/LuchaThumbnail.jpg",
+		"featuredSummary": "A set of animations made for 3 different events that were going on at the time, where it was ran throughout intermissions within the event itself on a large projector on the side of a tower.",
+		"childImg": [
+			{ "img": "/images/Projects/QR/LuchaThumbnail.jpg" },
+			{ "img": "/images/Projects/QR/VibrasThumbnail.jpg" },
+			{ "img": "/images/Projects/QR/MarleyThumbnail.jpg" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	}
+]
