@@ -1,17 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Modal.module.css";
-
-type projectProps = {
-	category: string;
-	title: string;
-	featuredImg: string;
-	featuredSummary: string;
-	summary?: string;
-	childImg?: { img: string }[];
-	owner?: string;
-	progress?: string;
-	link?: string;
-};
+import type { projectProps } from "../../lib/types";
 
 type ModalProps = {
 	project: projectProps | null;
@@ -21,6 +10,7 @@ type ModalProps = {
 function Project({ project, onClose }: ModalProps) {
 	if (!project) return null;
 
+	//Controls which image is currently on the main image container
 	const [activeImg, setActiveImg] = useState(project.featuredImg);
 
 	useEffect(() => {

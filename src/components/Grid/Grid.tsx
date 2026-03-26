@@ -1,18 +1,7 @@
 import { useState, useMemo } from "react";
 import styles from "./Grid.module.css";
 import Modal from "../Project Modal/Modal";
-
-type projectProps = {
-	category: string;
-	title: string;
-	featuredImg: string;
-	featuredSummary: string;
-	summary?: string;
-	childImg?: { img: string }[];
-	owner?: string;
-	progress?: string;
-	link?: string;
-};
+import type { projectProps } from "../../lib/types";
 
 type gridProps = {
 	data: projectProps[];
