@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Grid.module.css";
 import Modal from "../Project Modal/Modal";
 import type { projectProps } from "../../lib/types";
@@ -9,12 +10,34 @@ type gridProps = {
 	categories?: string[];
 };
 
-function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
-	//Pagination and Filter Logic start
-	const [selectedCategory, setSelectedCategory] = useState("all");
-	const [currentPage, setCurrentPage] = useState(1);
+const containerVariants = {
+	hidden: {},
+	show: {
+		transition: {
+			staggerChildren: 0.08,
+		},
+	},
+};
 
-	//Project with the latest category is removed from the grid
+function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
+	const [shouldRender, setShouldRender] = useState(false);
+	const [shouldAnimate, setShouldAnimate] = useState(false);
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setShouldRender(true);
+
+			setTimeout(() => {
+				setShouldAnimate(true);
+			}, 50);
+		}, 120);
+
+		return () => clearTimeout(timeout);
+	}, []);
+
+	const [selectedCategory, setSelectedCategory] = useState("all");
+	const [visibleCount, setVisibleCount] = useState(itemsPerPage);
+
 	const gridProjects = useMemo(() => {
 		return data.filter((work) => work.category !== "latest");
 	}, [data]);
@@ -26,34 +49,68 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 		return ["all", ...Array.from(unique)];
 	}, [gridProjects, categories]);
 
-	//Filters through the selected category
 	const filteredProjects = useMemo(() => {
 		if (selectedCategory === "all") return gridProjects;
 		return gridProjects.filter((p) => p.category === selectedCategory);
 	}, [gridProjects, selectedCategory]);
 
-	//Sets the total pages based on the currently filtered category
-	const totalPages = Math.max(
-		1,
-		Math.ceil(filteredProjects.length / itemsPerPage),
-	);
+	const visibleProjects = useMemo(() => {
+		return filteredProjects.slice(0, visibleCount);
+	}, [filteredProjects, visibleCount]);
 
-	//Divides all items to different pages
-	const paginatedProjects = useMemo(() => {
-		const start = (currentPage - 1) * itemsPerPage;
-		return filteredProjects.slice(start, start + itemsPerPage);
-	}, [filteredProjects, currentPage, itemsPerPage]);
-
-	//Resets the grid when the category swaps
 	const handleCategoryChange = (category: string) => {
 		setSelectedCategory(category);
-		setCurrentPage(1);
+		setVisibleCount(itemsPerPage);
 	};
-	//Pagination and Filter Logic end
 
 	const [selectedProject, setSelectedProject] = useState<projectProps | null>(
 		null,
 	);
+
+	const loadMoreRef = useRef<HTMLDivElement | null>(null);
+	const observerRef = useRef<IntersectionObserver | null>(null);
+
+	useEffect(() => {
+		if (!shouldRender) return;
+		if (!loadMoreRef.current) return;
+
+		const id = requestAnimationFrame(() => {
+			if (observerRef.current) observerRef.current.disconnect();
+
+			const node = loadMoreRef.current;
+
+			observerRef.current = new IntersectionObserver(
+				(entries) => {
+					const first = entries[0];
+
+					if (first.isIntersecting) {
+						setVisibleCount((prev) => {
+							if (prev >= filteredProjects.length) return prev;
+
+							return Math.min(prev + itemsPerPage, filteredProjects.length);
+						});
+					}
+				},
+				{
+					rootMargin: "200px",
+					threshold: 0,
+				},
+			);
+
+			observerRef.current.observe(node);
+		});
+
+		return () => {
+			cancelAnimationFrame(id);
+			observerRef.current?.disconnect();
+		};
+	}, [
+		shouldRender,
+		selectedCategory,
+		visibleCount,
+		filteredProjects.length,
+		itemsPerPage,
+	]);
 
 	return (
 		<div className={styles.gridContainer}>
@@ -61,34 +118,45 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 				project={selectedProject}
 				onClose={() => setSelectedProject(null)}
 			/>
-			<div className={styles.pageContainer}>
-				{paginatedProjects.map((project) => (
-					<img
-						key={project.title}
-						src={project.featuredImg}
-						className={styles.item}
-						onClick={() => setSelectedProject(project)}
-					/>
-				))}
-			</div>
+
+			{shouldRender && (
+				<motion.div
+					className={styles.pageContainer}
+					variants={containerVariants}
+					initial="hidden"
+					animate={shouldAnimate ? "show" : "hidden"}
+					layout
+				>
+					<AnimatePresence mode="popLayout">
+						{visibleProjects.map((project) => (
+							<motion.img
+								key={project.title}
+								layout
+								src={project.featuredImg}
+								className={styles.item}
+								onClick={() => setSelectedProject(project)}
+								initial={{ opacity: 0, y: 40 }}
+								animate={
+									shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }
+								}
+								exit={{ opacity: 0, scale: 0.95 }}
+								whileHover={{ scale: 1.03 }}
+								whileTap={{ scale: 0.97 }}
+								transition={{
+									duration: 0.3,
+									layout: { duration: 0.4, ease: "easeInOut" },
+								}}
+								loading="lazy"
+								decoding="async"
+							/>
+						))}
+					</AnimatePresence>
+
+					<div ref={loadMoreRef} className={styles.loadMoreTrigger} />
+				</motion.div>
+			)}
 
 			<div className={styles.controller}>
-				<div className={styles.pagination}>
-					<button
-						onClick={() => setCurrentPage((p) => p - 1)}
-						disabled={currentPage === 1}
-					>
-						Left
-					</button>
-
-					<button
-						onClick={() => setCurrentPage((p) => p + 1)}
-						disabled={currentPage === totalPages}
-					>
-						Right
-					</button>
-				</div>
-
 				<div className={styles.filter}>
 					{availableCategories.map((category) => (
 						<button

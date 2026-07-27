@@ -2,16 +2,19 @@
 	display: flex;
 	height: 100%;
 	flex-flow: column nowrap;
+	min-height: 0;
 }
 
 .pageContainer {
+	flex: 1;
 	display: grid;
-	height: 100%;
+	min-height: 0;
 	grid-template-columns: repeat(3, minmax(100px, 1fr));
 	grid-gap: 1.5rem;
 	padding: 1.5rem;
 	border-radius: 0.25rem;
-	overflow: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
 }
 
 .item {
@@ -26,17 +29,11 @@
 
 .controller {
 	display: flex;
-	height: 30%;
-	margin-top: auto;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column nowrap;
 	gap: 1rem;
-}
-
-.pagination {
-	display: flex;
-	gap: 1rem;
+	padding: 1rem;
 }
 
 .filter {
