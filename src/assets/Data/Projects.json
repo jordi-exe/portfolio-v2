@@ -71,14 +71,14 @@
 	{
 		"category": "design",
 		"title": "Community Posters",
-		"featuredImg": "/images/Projects/QR/Poster1.jpg",
+		"featuredImg": "https://picsum.photos/600/900",
 		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
 		"childImg": [
-			{ "img": "/images/Projects/QR/Poster1.jpg" },
-			{ "img": "/images/Projects/QR/Poster2.jpg" },
-			{ "img": "/images/Projects/QR/Poster3.jpg" },
-			{ "img": "/images/Projects/QR/Poster4.jpg" },
-			{ "img": "/images/Projects/QR/MayaKaan.jpg" }
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -86,12 +86,12 @@
 	{
 		"category": "design",
 		"title": "Community Animations",
-		"featuredImg": "/images/Projects/QR/LuchaThumbnail.jpg",
+		"featuredImg": "https://picsum.photos/700/900",
 		"featuredSummary": "A set of animations made for 3 different events that were going on at the time, where it was ran throughout intermissions within the event itself on a large projector on the side of a tower.",
 		"childImg": [
-			{ "img": "/images/Projects/QR/LuchaThumbnail.jpg" },
-			{ "img": "/images/Projects/QR/VibrasThumbnail.jpg" },
-			{ "img": "/images/Projects/QR/MarleyThumbnail.jpg" }
+			{ "img": "https://picsum.photos/701/900" },
+			{ "img": "https://picsum.photos/702/900" },
+			{ "img": "https://picsum.photos/707/900" }
 		],
 		"owner": "Solo",
 		"progress": "Complete"

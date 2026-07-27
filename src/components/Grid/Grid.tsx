@@ -1,8 +1,8 @@
-import { useState, useMemo, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import styles from "./Grid.module.css";
-import Modal from "../Project Modal/Modal";
-import type { projectProps } from "../../lib/types";
+import { useState, useMemo, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import styles from './Grid.module.css';
+import Modal from '../Project Modal/Modal';
+import type { projectProps } from '../../lib/types';
 
 type gridProps = {
 	data: projectProps[];
@@ -10,14 +10,9 @@ type gridProps = {
 	categories?: string[];
 };
 
-const containerVariants = {
-	hidden: {},
-	show: {
-		transition: {
-			staggerChildren: 0.08,
-		},
-	},
-};
+const ENTRANCE_STAGGER_S = 0.1;
+const ENTRANCE_DURATION_S = 0.3;
+const INITIAL_ENTRANCE_DELAY_MS = 300;
 
 function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 	const [shouldRender, setShouldRender] = useState(false);
@@ -30,7 +25,7 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 			setTimeout(() => {
 				setShouldAnimate(true);
 			}, 50);
-		}, 120);
+		}, INITIAL_ENTRANCE_DELAY_MS);
 
 		return () => clearTimeout(timeout);
 	}, []);
@@ -63,9 +58,7 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 		setVisibleCount(itemsPerPage);
 	};
 
-	const [selectedProject, setSelectedProject] = useState<projectProps | null>(
-		null,
-	);
+	const [selectedProject, setSelectedProject] = useState<projectProps | null>(null);
 
 	const loadMoreRef = useRef<HTMLDivElement | null>(null);
 	const observerRef = useRef<IntersectionObserver | null>(null);
@@ -104,31 +97,35 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 			cancelAnimationFrame(id);
 			observerRef.current?.disconnect();
 		};
-	}, [
-		shouldRender,
-		selectedCategory,
-		visibleCount,
-		filteredProjects.length,
-		itemsPerPage,
-	]);
+	}, [shouldRender, selectedCategory, visibleCount, filteredProjects.length, itemsPerPage]);
 
 	return (
 		<div className={styles.gridContainer}>
-			<Modal
-				project={selectedProject}
-				onClose={() => setSelectedProject(null)}
-			/>
+			<Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+
+			<div className={styles.controller}>
+				<div className={styles.filter}>
+					{availableCategories.map((category) => (
+						<button
+							key={category}
+							onClick={() => handleCategoryChange(category)}
+							className={selectedCategory === category ? styles.active : ''}
+						>
+							{category}
+						</button>
+					))}
+				</div>
+			</div>
 
 			{shouldRender && (
 				<motion.div
 					className={styles.pageContainer}
-					variants={containerVariants}
 					initial="hidden"
 					animate={shouldAnimate ? "show" : "hidden"}
 					layout
 				>
 					<AnimatePresence mode="popLayout">
-						{visibleProjects.map((project) => (
+						{visibleProjects.map((project, index) => (
 							<motion.img
 								key={project.title}
 								layout
@@ -137,13 +134,14 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 								onClick={() => setSelectedProject(project)}
 								initial={{ opacity: 0, y: 40 }}
 								animate={
-									shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }
+									shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 0, y: 0 }
 								}
 								exit={{ opacity: 0, scale: 0.95 }}
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.97 }}
 								transition={{
-									duration: 0.3,
+									duration: ENTRANCE_DURATION_S,
+									delay: shouldAnimate ? index * ENTRANCE_STAGGER_S : 0,
 									layout: { duration: 0.4, ease: "easeInOut" },
 								}}
 								loading="lazy"
@@ -155,20 +153,6 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 					<div ref={loadMoreRef} className={styles.loadMoreTrigger} />
 				</motion.div>
 			)}
-
-			<div className={styles.controller}>
-				<div className={styles.filter}>
-					{availableCategories.map((category) => (
-						<button
-							key={category}
-							onClick={() => handleCategoryChange(category)}
-							className={selectedCategory === category ? styles.active : ""}
-						>
-							{category}
-						</button>
-					))}
-				</div>
-			</div>
 		</div>
 	);
 }
