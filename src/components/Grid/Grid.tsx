@@ -1,8 +1,8 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import styles from './Grid.module.css';
-import Modal from '../Project Modal/Modal';
-import type { projectProps } from '../../lib/types';
+import { useState, useMemo, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import styles from "./Grid.module.css";
+import Modal from "../Project Modal/Modal";
+import type { projectProps } from "../../lib/types";
 
 type gridProps = {
 	data: projectProps[];
@@ -58,7 +58,9 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 		setVisibleCount(itemsPerPage);
 	};
 
-	const [selectedProject, setSelectedProject] = useState<projectProps | null>(null);
+	const [selectedProject, setSelectedProject] = useState<projectProps | null>(
+		null,
+	);
 
 	const loadMoreRef = useRef<HTMLDivElement | null>(null);
 	const observerRef = useRef<IntersectionObserver | null>(null);
@@ -90,18 +92,27 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 				},
 			);
 
-			observerRef.current.observe(node);
+			observerRef.current.observe(node!);
 		});
 
 		return () => {
 			cancelAnimationFrame(id);
 			observerRef.current?.disconnect();
 		};
-	}, [shouldRender, selectedCategory, visibleCount, filteredProjects.length, itemsPerPage]);
+	}, [
+		shouldRender,
+		selectedCategory,
+		visibleCount,
+		filteredProjects.length,
+		itemsPerPage,
+	]);
 
 	return (
 		<div className={styles.gridContainer}>
-			<Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+			<Modal
+				project={selectedProject}
+				onClose={() => setSelectedProject(null)}
+			/>
 
 			<div className={styles.controller}>
 				<div className={styles.filter}>
@@ -109,7 +120,7 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 						<button
 							key={category}
 							onClick={() => handleCategoryChange(category)}
-							className={selectedCategory === category ? styles.active : ''}
+							className={selectedCategory === category ? styles.active : ""}
 						>
 							{category}
 						</button>

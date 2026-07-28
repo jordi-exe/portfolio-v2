@@ -95,5 +95,80 @@
 		],
 		"owner": "Solo",
 		"progress": "Complete"
+	},
+	{
+		"category": "code",
+		"title": "Code Dummy Project",
+		"featuredImg": "https://picsum.photos/600/900",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "code",
+		"title": "Code Dummy Project 2",
+		"featuredImg": "https://picsum.photos/600/900",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "code",
+		"title": "Code Dummy Project 3",
+		"featuredImg": "https://picsum.photos/600/900",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "modeling",
+		"title": "Modeling Dummy Project",
+		"featuredImg": "https://picsum.photos/600/900",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
+		"category": "modeling",
+		"title": "Modeling Dummy Project 2",
+		"featuredImg": "https://picsum.photos/600/900",
+		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/602/900" },
+			{ "img": "https://picsum.photos/603/900" },
+			{ "img": "https://picsum.photos/604/900" },
+			{ "img": "https://picsum.photos/606/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
 	}
 ]
