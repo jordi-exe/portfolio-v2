@@ -44,14 +44,14 @@ function Project({ project, onClose }: ModalProps) {
 					</div>
 
 					<div className={styles.statusContainer}>
-						<h3>{project.owner}</h3>
-						<h3>{project.progress}</h3>
+						<div>{project.owner}</div>
+						<div>{project.progress}</div>
 						<a href={project.link}>View Project</a>
 					</div>
 				</div>
 
 				<div className={styles.column}>
-					<div className={styles.title}>{project.title}</div>
+					<h2 className={styles.title}>{project.title}</h2>
 					<p className={styles.summary}>
 						{project.summary || project.featuredSummary}
 					</p>

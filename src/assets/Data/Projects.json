@@ -19,6 +19,7 @@
 			{ "img": "/images/experience/journey_team/StarJourney.png" },
 			{ "img": "/images/Projects/GameDev/EverbloomDreams.png" }
 		],
+		"summary": "This is simply a test summary for the project, and will be replaced with a more detailed one later.\n\n I am currently extending the length of this summary so that I can see how a full paragraph will look for the modal itself.",
 		"owner": "Group Jam",
 		"progress": "Complete"
 	},
