@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Modal.module.css";
 import type { projectProps } from "../../lib/types";
+import { motion } from "framer-motion";
 
 type ModalProps = {
 	project: projectProps | null;
@@ -20,9 +21,15 @@ function Project({ project, onClose }: ModalProps) {
 	}, [project]);
 
 	return (
-		<div className={styles.modalBackdrop}>
+		<motion.div
+			className={styles.modalBackdrop}
+			initial={{ x: "100%" }}
+			animate={{ x: 0 }}
+			exit={{ x: "100%" }}
+			transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+		>
 			<button onClick={onClose} className={styles.closeBtn}>
-				Close
+				{String.fromCharCode(10148)}
 			</button>
 			<div className={styles.modalContainer}>
 				<div className={styles.column}>
@@ -51,13 +58,15 @@ function Project({ project, onClose }: ModalProps) {
 				</div>
 
 				<div className={styles.column}>
-					<h2 className={styles.title}>{project.title}</h2>
-					<p className={styles.summary}>
-						{project.summary || project.featuredSummary}
-					</p>
+					<div className={styles.description}>
+						<h2 className={styles.title}>{project.title}</h2>
+						<p className={styles.summary}>
+							{project.summary || project.featuredSummary}
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

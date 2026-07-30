@@ -109,10 +109,14 @@ function Grid({ data, itemsPerPage = 2, categories }: gridProps) {
 
 	return (
 		<div className={styles.gridContainer}>
-			<Modal
-				project={selectedProject}
-				onClose={() => setSelectedProject(null)}
-			/>
+			<AnimatePresence>
+				{selectedProject && (
+					<Modal
+						project={selectedProject}
+						onClose={() => setSelectedProject(null)}
+					/>
+				)}
+			</AnimatePresence>
 
 			<div className={styles.controller}>
 				<div className={styles.filter}>
