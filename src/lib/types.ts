@@ -2,7 +2,8 @@ export type projectProps = {
 	category: string;
 	title: string;
 	featuredImg: string;
-	featuredSummary: string;
+	modalLogo?: string;
+	featuredSummary?: string;
 	summary?: string;
 	childImg?: { img: string }[];
 	owner?: string;

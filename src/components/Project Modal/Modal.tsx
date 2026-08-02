@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./Modal.module.css";
 import type { projectProps } from "../../lib/types";
 import { motion } from "framer-motion";
+import Picture from "../Picture/Picture";
 
 type ModalProps = {
 	project: projectProps | null;
@@ -63,6 +64,10 @@ function Project({ project, onClose }: ModalProps) {
 						<p className={styles.summary}>
 							{project.summary || project.featuredSummary}
 						</p>
+					</div>
+
+					<div className={styles.modalLogo}>
+						<Picture src={project.modalLogo as string} className="modalLogo" />
 					</div>
 				</div>
 			</div>

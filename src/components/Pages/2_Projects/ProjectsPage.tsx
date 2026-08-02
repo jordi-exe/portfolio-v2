@@ -4,8 +4,7 @@ import Picture from "../../Picture/Picture";
 import Grid from "../../Grid/Grid";
 
 function Projects() {
-	const latestProject = projects.find((latest) => latest.category === "latest")
-		?.featuredImg as string;
+	const latestProject = projects.find((latest) => latest.category === "latest");
 
 	return (
 		<div className="pageContainer">
@@ -14,13 +13,16 @@ function Projects() {
 					<h1>Latest Project</h1>
 
 					<div className={styles.latestProject}>
-						<Picture src={latestProject} className="latest" />
+						<Picture
+							src={latestProject?.featuredImg as string}
+							className="latest"
+						/>
 					</div>
 
 					<div className={styles.latestDesc}>
-						<h2>Project Title</h2>
-
-						<p>Summary of Project</p>
+						<h2>{latestProject?.title}</h2>
+						<h4>{latestProject?.featuredSummary}</h4>
+						<p>{latestProject?.summary}</p>
 					</div>
 				</div>
 

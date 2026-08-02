@@ -11,6 +11,11 @@
 	height: clamp(2rem, 5vw, 5.5rem);
 }
 
+.modalLogo {
+	width: auto;
+	height: clamp(10rem, 15vw, 20rem);
+}
+
 .company {
 	object-fit: cover;
 	overflow-clip-margin: unset;

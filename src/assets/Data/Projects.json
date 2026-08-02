@@ -1,42 +1,81 @@
 [
 	{
-		"category": "latest",
+		"category": "game dev",
 		"title": "Mario & Luigi: Star Journey",
 		"featuredImg": "/images/experience/journey_team/StarJourney.png",
-		"featuredSummary": "Lorem ipsum summary",
-		"summary": "Lorem ipsum summary",
+		"modalLogo": "/images/experience/journey_team/StarJourney.png",
+		"summary": "A love letter to the Mario & Luigi franchise, I currently help out as Lead 3D Modeler and Co-Director alongside a wonderful team of individuals making this just for the love of the game, no financial benefit whatsoever.\n\n Although it's still early in development, we've been using this as the perfect chance to learn the basics of organizational work within game development in order for us to properly train ourselves for official game development work in the future, no matter how long it may take.",
 		"owner": "Journey Team",
 		"progress": "Currently being worked on",
 		"link": "www.google.com"
 	},
 	{
+		"category": "code",
+		"title": "Website Portfolio",
+		"featuredImg": "https://picsum.photos/601/900",
+		"summary": "Designed and programmed this website portfolio myself, with some guidance from those who are more experienced than me, I decided that it was time to properly make my own fully original portfolio.\n\n The previous website that I had before this one was just a basic Bootstrap template that I had found a couple years ago that I liked at the time, but now that I'm properly trying to get my start into the industry, it was finally time to level it all up.\n\n I still consider this as currently in progress as there's still more things that I'd like to improve and add to the site, such as adding a better labeling system to these card modals that would show what type of project it is.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" }
+		],
+		"owner": "Solo",
+		"progress": "In Progress"
+	},
+	{
+		"category": "code",
+		"title": "Eebz Website",
+		"featuredImg": "/images/experience/eebz/eebz.webp",
+		"summary": "I was contracted by eebz to work on their marketing page, following mockup designs that their hired designers already had available. I began work immediately by familiarizing myself with Vue.js and Nuxt 3, as I had never even touched them before. I was able to get straight into working the next day and I began to complete tasks for the website's different pages one by one, with the most complex one being needing to figure out how to align images with their descriptor cards on mobile without messing with the desktop version.\n Overall, I am very grateful that they decided to take me on without much experience and it was a wonderful time for me to work with them.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" }
+		],
+		"owner": "Eebz Ltd",
+		"progress": "Complete"
+	},
+	{
+		"category": "latest",
+		"title": "Trello-Discord Bot Syncer",
+		"featuredImg": "https://picsum.photos/601/900",
+		"featuredSummary": "A way to sync Trello and Discord seamlessly!",
+		"summary": "This bot is actually something that I am currently working on as a way to sync forum posts with Trello boards for ease of access.\n\n The main thing it does is that if there's a new forum post, the bot will automatically add that post as a card to a list on Trello, using Discord Forum Tags to dictate which list it'll be assigned to, as well as what labels it'll get.",
+		"childImg": [
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" },
+			{ "img": "https://picsum.photos/601/900" }
+		],
+		"owner": "Solo",
+		"progress": "Complete"
+	},
+	{
 		"category": "game dev",
 		"title": "Purga-Story Demo",
 		"featuredImg": "/images/Projects/GameDev/PurgaStory.png",
-		"featuredSummary": "A game jam game.",
+		"summary": "The blood moon rises in this spooky Metroidvania. Local newly-dead ghost girl Claire has been awakened by the blood moon. With no memories and only a vague idea of who she is, she must brave the terrors of the living world with her ghastly abilities to reclaim her past and get her closure, before she is locked in purgatory forever. Also there is a skull there too, I suppose.\n\n A gameboy game made for GBJam 12, ranking 24th out of 396 entries.",
 		"childImg": [
 			{ "img": "/images/Projects/GameDev/PurgaStory.png" },
 			{ "img": "/images/experience/journey_team/StarJourney.png" },
 			{ "img": "/images/Projects/GameDev/EverbloomDreams.png" }
 		],
-		"summary": "This is simply a test summary for the project, and will be replaced with a more detailed one later.\n\n I am currently extending the length of this summary so that I can see how a full paragraph will look for the modal itself.",
-		"owner": "Group Jam",
+		"owner": "Group Jam: Journey Team",
 		"progress": "Complete"
 	},
 	{
 		"category": "game dev",
 		"title": "Everbloom Dreams: Elusion Session",
 		"featuredImg": "/images/Projects/GameDev/EverbloomDreams.png",
-		"featuredSummary": "A game jam game.",
+		"featuredSummary": "Adventure through your dreams and collect the Aspects of yourself, and escape through the clocktower. Make sure you are careful though, for every serene and peaceful dream there's a nightmare, every so often you'll come across a nightmare, you will gradually lose your Aspects as you spend more lingering in the nightmare. \n\n Everbloom Dreams Elusion Session is a game made by the Journey Team that takes some inspiration from Pikmin and some from the aesthetics of Nintendo DS games.",
 		"childImg": [{ "img": "" }, { "img": "" }, { "img": "" }],
-		"owner": "Group Jam",
+		"owner": "Group Jam: Journey Team",
 		"progress": "Complete"
 	},
 	{
 		"category": "game dev",
 		"title": "Mari La Mariposa",
 		"featuredImg": "/images/Projects/GameDev/Mari.gif",
-		"featuredSummary": "An edutainment mobile game teaching about the life cycle of a butterfly.",
+		"featuredSummary": "An Android 3D flight simulator-esque edutainment mobile game focused on teaching children, from 5 years and up, about the life cycle of a butterfly. The player takes control of a butterfly to collect tokens scattered around the levels in order to progress.\n\n It was available on the Mexican Play Store for a short while and was developed in Unity 3D.",
 		"owner": "University Group Project",
 		"progress": "Complete"
 	},
@@ -44,7 +83,7 @@
 		"category": "game dev",
 		"title": "Slingball",
 		"featuredImg": "/images/Projects/GameDev/Slingball.gif",
-		"featuredSummary": "A prototype with the main goal being to launch the ball as far as possible, with upgradable skills in order to increase your maximum distance.",
+		"featuredSummary": "A prototype android mobile game with the main goal being to launch the ball as far as possible, with upgradable skills in order to increase your maximum distance.\n\n This would be the first “complex” game that I worked on that I actually ended up publishing on the Play Store for a short time. I also ended up testing Google Ads with it but in the end decided that I didn't want to go the mobile game route for game development.",
 		"owner": "Solo [Prototype]",
 		"progress": "Complete"
 	},
@@ -53,7 +92,7 @@
 		"title": "The Last Cave",
 		"featuredImg": "/images/Projects/GameDev/TheLastCave.gif",
 		"featuredSummary": "You find yourself awake in a small cave, with only a bed made of twigs and leaves, a kettle for water, and a campfire for warmth. You must survive, even if there are no predators around.",
-		"summary": "Will add summary later",
+		"summary": "You find yourself awake in a small cave, with only a bed made of twigs and leaves, a kettle for water, and a campfire for warmth. You must survive, even if there are no predators around.\n\n The very first game prototype I made for My First Game Jam 2021 in Unity.",
 		"owner": "Solo [Prototype]",
 		"progress": "Complete"
 	},
@@ -98,40 +137,10 @@
 		"progress": "Complete"
 	},
 	{
-		"category": "code",
-		"title": "Code Dummy Project",
+		"category": "modeling",
+		"title": "Mage Table Render",
 		"featuredImg": "https://picsum.photos/600/900",
-		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
-		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
-		],
-		"owner": "Solo",
-		"progress": "Complete"
-	},
-	{
-		"category": "code",
-		"title": "Code Dummy Project 2",
-		"featuredImg": "https://picsum.photos/600/900",
-		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
-		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
-		],
-		"owner": "Solo",
-		"progress": "Complete"
-	},
-	{
-		"category": "code",
-		"title": "Code Dummy Project 3",
-		"featuredImg": "https://picsum.photos/600/900",
-		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"summary": "The very first 3D model that I ever made (in Autodesk Maya as well), this was how I first got into modeling a couple of years ago. There's not much to say about this except that I've certainly leveled up my modeling skills, although I still have a long way to go before I can consider myself a professional modeler.",
 		"childImg": [
 			{ "img": "https://picsum.photos/601/900" },
 			{ "img": "https://picsum.photos/602/900" },
@@ -144,9 +153,9 @@
 	},
 	{
 		"category": "modeling",
-		"title": "Modeling Dummy Project",
+		"title": "S.E.E.S Evoker",
 		"featuredImg": "https://picsum.photos/600/900",
-		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"summary": "I had recently finished playing Persona 3 Reload and it left such a huge impression on me. I absolutely fell in love with the game and it honestly is now in my top 10 favourite games of all time, so I decided that I wanted to try to remake the evoker within Maya and this is the result, I tried making the model as accurate to the game as possible and there are improvements I'd like to make in the future, but this would be my very best that I have at this moment.\n\n I learnt so much more about modeling from working on this.",
 		"childImg": [
 			{ "img": "https://picsum.photos/601/900" },
 			{ "img": "https://picsum.photos/602/900" },
@@ -159,9 +168,9 @@
 	},
 	{
 		"category": "modeling",
-		"title": "Modeling Dummy Project 2",
+		"title": "Vintage Telephone",
 		"featuredImg": "https://picsum.photos/600/900",
-		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
+		"summary": "A friend of mine had challenged me to make a Realistic Vintage Telephone within a set time limit, and this is the result.\n\n Making this Vintage Telephone taught me so many things that I didn't know about Maya, and as a result I had gotten a far better grasp of modeling shortcuts and best practices, and it especially showed me that while UV unwrapping may be sort of scary at first, it isn't as hard as one might think, even if it still is sort of tedious.\n\n I had originally made this back in 2024 and so much has changed since then, the main thing being that I now primarily use Blender for any models as it simply is so much better than Maya.",
 		"childImg": [
 			{ "img": "https://picsum.photos/601/900" },
 			{ "img": "https://picsum.photos/602/900" },
