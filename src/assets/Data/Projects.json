@@ -2,22 +2,51 @@
 	{
 		"category": "game dev",
 		"title": "Mario & Luigi: Star Journey",
-		"featuredImg": "/images/experience/journey_team/StarJourney.png",
+		"featuredImg": "/images/Projects/GameDev/StarJourney/StarJourneyThumbnail.webp",
 		"modalLogo": "/images/experience/journey_team/StarJourney.png",
 		"summary": "A love letter to the Mario & Luigi franchise, I currently help out as Lead 3D Modeler and Co-Director alongside a wonderful team of individuals making this just for the love of the game, no financial benefit whatsoever.\n\n Although it's still early in development, we've been using this as the perfect chance to learn the basics of organizational work within game development in order for us to properly train ourselves for official game development work in the future, no matter how long it may take.",
+		"childImg": [
+			{
+				"type": "youtube",
+				"videoId": "BiEw9V4k8rk",
+				"thumbnail": "https://img.youtube.com/vi/BiEw9V4k8rk/maxresdefault.jpg"
+			},
+			{
+				"type": "youtube",
+				"videoId": "mDLOEYfry1c",
+				"thumbnail": "https://img.youtube.com/vi/mDLOEYfry1c/maxresdefault.jpg"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/StarJourney/StarJourneyLogo.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/StarJourney/StarJourney_1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/StarJourney/StarJourney_2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/StarJourney/StarJourney_3.webp"
+			}
+		],
 		"owner": "Journey Team",
-		"progress": "Currently being worked on",
-		"link": "www.google.com"
+		"progress": "Currently being worked on"
 	},
 	{
 		"category": "code",
 		"title": "Website Portfolio",
-		"featuredImg": "https://picsum.photos/601/900",
+		"featuredImg": "/images/Projects/Code/Portfolio/PortfolioThumbnail.webp",
 		"summary": "Designed and programmed this website portfolio myself, with some guidance from those who are more experienced than me, I decided that it was time to properly make my own fully original portfolio.\n\n The previous website that I had before this one was just a basic Bootstrap template that I had found a couple years ago that I liked at the time, but now that I'm properly trying to get my start into the industry, it was finally time to level it all up.\n\n I still consider this as currently in progress as there's still more things that I'd like to improve and add to the site, such as adding a better labeling system to these card modals that would show what type of project it is.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" }
+			{ "type": "image", "src": "/images/Projects/Code/Portfolio/About.webp" },
+			{
+				"type": "image",
+				"src": "/images/Projects/Code/Portfolio/Experience.webp"
+			}
 		],
 		"owner": "Solo",
 		"progress": "In Progress"
@@ -25,12 +54,15 @@
 	{
 		"category": "code",
 		"title": "Eebz Website",
-		"featuredImg": "/images/experience/eebz/eebz.webp",
+		"featuredImg": "/images/Projects/Code/Eebz/EebzThumbnail.webp",
 		"summary": "I was contracted by eebz to work on their marketing page, following mockup designs that their hired designers already had available. I began work immediately by familiarizing myself with Vue.js and Nuxt 3, as I had never even touched them before. I was able to get straight into working the next day and I began to complete tasks for the website's different pages one by one, with the most complex one being needing to figure out how to align images with their descriptor cards on mobile without messing with the desktop version.\n Overall, I am very grateful that they decided to take me on without much experience and it was a wonderful time for me to work with them.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" }
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz1.webp" },
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz2.webp" },
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz3.webp" },
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz4.webp" },
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz5.webp" },
+			{ "type": "image", "src": "/images/Projects/Code/Eebz/Eebz6.webp" }
 		],
 		"owner": "Eebz Ltd",
 		"progress": "Complete"
@@ -38,72 +70,147 @@
 	{
 		"category": "latest",
 		"title": "Trello-Discord Bot Syncer",
-		"featuredImg": "https://picsum.photos/601/900",
+		"featuredImg": "/images/Projects/Code/TrelloDiscordBot/TrelloDiscord1.webp",
 		"featuredSummary": "A way to sync Trello and Discord seamlessly!",
 		"summary": "This bot is actually something that I am currently working on as a way to sync forum posts with Trello boards for ease of access.\n\n The main thing it does is that if there's a new forum post, the bot will automatically add that post as a card to a list on Trello, using Discord Forum Tags to dictate which list it'll be assigned to, as well as what labels it'll get.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/601/900" }
+			{ "type": "image", "src": "https://picsum.photos/601/900" },
+			{ "type": "image", "src": "https://picsum.photos/601/900" },
+			{ "type": "image", "src": "https://picsum.photos/601/900" }
 		],
 		"owner": "Solo",
-		"progress": "Complete"
+		"progress": "In Progress"
 	},
 	{
 		"category": "game dev",
 		"title": "Purga-Story Demo",
-		"featuredImg": "/images/Projects/GameDev/PurgaStory.png",
+		"featuredImg": "/images/Projects/GameDev/PurgaStory/PurgaStoryThumbnail.webp",
 		"summary": "The blood moon rises in this spooky Metroidvania. Local newly-dead ghost girl Claire has been awakened by the blood moon. With no memories and only a vague idea of who she is, she must brave the terrors of the living world with her ghastly abilities to reclaim her past and get her closure, before she is locked in purgatory forever. Also there is a skull there too, I suppose.\n\n A gameboy game made for GBJam 12, ranking 24th out of 396 entries.",
 		"childImg": [
-			{ "img": "/images/Projects/GameDev/PurgaStory.png" },
-			{ "img": "/images/experience/journey_team/StarJourney.png" },
-			{ "img": "/images/Projects/GameDev/EverbloomDreams.png" }
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/PurgaStory/PurgaStory1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/PurgaStory/PurgaStory2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/PurgaStory/PurgaStory3.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/PurgaStory/PurgaStory4.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/PurgaStory/PurgaStory5.webp"
+			}
 		],
 		"owner": "Group Jam: Journey Team",
-		"progress": "Complete"
+		"progress": "Complete",
+		"link": "https://jordiexe.itch.io/purga-story"
 	},
 	{
 		"category": "game dev",
 		"title": "Everbloom Dreams: Elusion Session",
-		"featuredImg": "/images/Projects/GameDev/EverbloomDreams.png",
+		"featuredImg": "/images/Projects/GameDev/EverbloomDreams/EverbloomThumbnail.webp",
 		"featuredSummary": "Adventure through your dreams and collect the Aspects of yourself, and escape through the clocktower. Make sure you are careful though, for every serene and peaceful dream there's a nightmare, every so often you'll come across a nightmare, you will gradually lose your Aspects as you spend more lingering in the nightmare. \n\n Everbloom Dreams Elusion Session is a game made by the Journey Team that takes some inspiration from Pikmin and some from the aesthetics of Nintendo DS games.",
-		"childImg": [{ "img": "" }, { "img": "" }, { "img": "" }],
+		"childImg": [
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/EverbloomDreams/Everbloom1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/EverbloomDreams/Everbloom2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/EverbloomDreams/Everbloom3.webp"
+			}
+		],
 		"owner": "Group Jam: Journey Team",
-		"progress": "Complete"
+		"progress": "Complete",
+		"link": "https://srlubadev.itch.io/everbloom-dreams"
 	},
 	{
 		"category": "game dev",
 		"title": "Mari La Mariposa",
-		"featuredImg": "/images/Projects/GameDev/Mari.gif",
+		"featuredImg": "/images/Projects/GameDev/MariLaMariposa/MariThumbnail.webp",
 		"featuredSummary": "An Android 3D flight simulator-esque edutainment mobile game focused on teaching children, from 5 years and up, about the life cycle of a butterfly. The player takes control of a butterfly to collect tokens scattered around the levels in order to progress.\n\n It was available on the Mexican Play Store for a short while and was developed in Unity 3D.",
+		"childImg": [
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/MariLaMariposa/Mari1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/MariLaMariposa/Mari2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/MariLaMariposa/Mari3.webp"
+			}
+		],
 		"owner": "University Group Project",
 		"progress": "Complete"
 	},
 	{
 		"category": "game dev",
 		"title": "Slingball",
-		"featuredImg": "/images/Projects/GameDev/Slingball.gif",
+		"featuredImg": "/images/Projects/GameDev/Slingball/SlingballThumbnail.webp",
 		"featuredSummary": "A prototype android mobile game with the main goal being to launch the ball as far as possible, with upgradable skills in order to increase your maximum distance.\n\n This would be the first “complex” game that I worked on that I actually ended up publishing on the Play Store for a short time. I also ended up testing Google Ads with it but in the end decided that I didn't want to go the mobile game route for game development.",
+		"childImg": [
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/Slingball/Slingball1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/Slingball/Slingball2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/Slingball/Slingball3.webp"
+			}
+		],
 		"owner": "Solo [Prototype]",
 		"progress": "Complete"
 	},
 	{
 		"category": "game dev",
 		"title": "The Last Cave",
-		"featuredImg": "/images/Projects/GameDev/TheLastCave.gif",
+		"featuredImg": "/images/Projects/GameDev/TheLastCave/TLCThumbnail.webp",
 		"featuredSummary": "You find yourself awake in a small cave, with only a bed made of twigs and leaves, a kettle for water, and a campfire for warmth. You must survive, even if there are no predators around.",
 		"summary": "You find yourself awake in a small cave, with only a bed made of twigs and leaves, a kettle for water, and a campfire for warmth. You must survive, even if there are no predators around.\n\n The very first game prototype I made for My First Game Jam 2021 in Unity.",
+		"childImg": [
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/TheLastCave/TLC1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/TheLastCave/TLC2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/GameDev/TheLastCave/TLC3.webp"
+			}
+		],
 		"owner": "Solo [Prototype]",
-		"progress": "Complete"
+		"progress": "Complete",
+		"link": "https://jordiexe.itch.io/the-last-cave"
 	},
 	{
 		"category": "design",
 		"title": "Christmas Posters",
-		"featuredImg": "/images/Projects/QR/FestivalNavideno.jpg",
+		"featuredImg": "/images/Projects/QR/FestivalNavideno.webp",
 		"featuredSummary": "A Christmas poster that was designed specifically to share on social media.",
 		"childImg": [
-			{ "img": "/images/Projects/QR/FestivalNavideno.jpg" },
-			{ "img": "/images/Projects/QR/RecitalNavideno.jpg" }
+			{ "type": "image", "src": "/images/Projects/QR/FestivalNavideno.webp" },
+			{ "type": "image", "src": "/images/Projects/QR/RecitalNavideno.webp" }
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -111,14 +218,14 @@
 	{
 		"category": "design",
 		"title": "Community Posters",
-		"featuredImg": "https://picsum.photos/600/900",
+		"featuredImg": "/images/Projects/QR/Poster1.webp",
 		"featuredSummary": "A set of posters made for different types of community events that detail the different timings and payment for each respective event.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
+			{ "type": "image", "src": "/images/Projects/QR/Poster1.webp" },
+			{ "type": "image", "src": "/images/Projects/QR/Poster2.webp" },
+			{ "type": "image", "src": "/images/Projects/QR/Poster3.webp" },
+			{ "type": "image", "src": "/images/Projects/QR/Poster4.webp" },
+			{ "type": "image", "src": "/images/Projects/QR/MayaKaan.webp" }
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -126,12 +233,19 @@
 	{
 		"category": "design",
 		"title": "Community Animations",
-		"featuredImg": "https://picsum.photos/700/900",
+		"featuredImg": "https://img.youtube.com/vi/__TXcDoTX50/maxresdefault.jpg",
 		"featuredSummary": "A set of animations made for 3 different events that were going on at the time, where it was ran throughout intermissions within the event itself on a large projector on the side of a tower.",
 		"childImg": [
-			{ "img": "https://picsum.photos/701/900" },
-			{ "img": "https://picsum.photos/702/900" },
-			{ "img": "https://picsum.photos/707/900" }
+			{
+				"type": "youtube",
+				"videoId": "__TXcDoTX50",
+				"thumbnail": "https://img.youtube.com/vi/__TXcDoTX50/maxresdefault.jpg"
+			},
+			{
+				"type": "youtube",
+				"videoId": "OIHulLvyzes",
+				"thumbnail": "https://img.youtube.com/vi/OIHulLvyzes/maxresdefault.jpg"
+			}
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -139,14 +253,13 @@
 	{
 		"category": "modeling",
 		"title": "Mage Table Render",
-		"featuredImg": "https://picsum.photos/600/900",
+		"featuredImg": "/images/Projects/Modeling/MageTable/MageTableThumbnail.webp",
 		"summary": "The very first 3D model that I ever made (in Autodesk Maya as well), this was how I first got into modeling a couple of years ago. There's not much to say about this except that I've certainly leveled up my modeling skills, although I still have a long way to go before I can consider myself a professional modeler.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/MageTable/MageTable.webp"
+			}
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -154,14 +267,25 @@
 	{
 		"category": "modeling",
 		"title": "S.E.E.S Evoker",
-		"featuredImg": "https://picsum.photos/600/900",
+		"featuredImg": "/images/Projects/Modeling/SEESEvoker/EvokerThumbnail.webp",
 		"summary": "I had recently finished playing Persona 3 Reload and it left such a huge impression on me. I absolutely fell in love with the game and it honestly is now in my top 10 favourite games of all time, so I decided that I wanted to try to remake the evoker within Maya and this is the result, I tried making the model as accurate to the game as possible and there are improvements I'd like to make in the future, but this would be my very best that I have at this moment.\n\n I learnt so much more about modeling from working on this.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/SEESEvoker/Evoker1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/SEESEvoker/Evoker2.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/SEESEvoker/Evoker3.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/SEESEvoker/Evoker4.webp"
+			}
 		],
 		"owner": "Solo",
 		"progress": "Complete"
@@ -169,14 +293,17 @@
 	{
 		"category": "modeling",
 		"title": "Vintage Telephone",
-		"featuredImg": "https://picsum.photos/600/900",
+		"featuredImg": "/images/Projects/Modeling/VintageTelephone/VintageTelephoneThumbnail.webp",
 		"summary": "A friend of mine had challenged me to make a Realistic Vintage Telephone within a set time limit, and this is the result.\n\n Making this Vintage Telephone taught me so many things that I didn't know about Maya, and as a result I had gotten a far better grasp of modeling shortcuts and best practices, and it especially showed me that while UV unwrapping may be sort of scary at first, it isn't as hard as one might think, even if it still is sort of tedious.\n\n I had originally made this back in 2024 and so much has changed since then, the main thing being that I now primarily use Blender for any models as it simply is so much better than Maya.",
 		"childImg": [
-			{ "img": "https://picsum.photos/601/900" },
-			{ "img": "https://picsum.photos/602/900" },
-			{ "img": "https://picsum.photos/603/900" },
-			{ "img": "https://picsum.photos/604/900" },
-			{ "img": "https://picsum.photos/606/900" }
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/VintageTelephone/VintageTelephone1.webp"
+			},
+			{
+				"type": "image",
+				"src": "/images/Projects/Modeling/VintageTelephone/VintageTelephone2.webp"
+			}
 		],
 		"owner": "Solo",
 		"progress": "Complete"

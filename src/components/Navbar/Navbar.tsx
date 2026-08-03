@@ -12,13 +12,13 @@ function Navbar({ onNav }: NavbarProps) {
 	return (
 		<div className={styles.navContainer}>
 			<div className={styles.navHeader}>
-				<h1>Jordi Jordi</h1>
+				<h1>Jorge Romero</h1>
 				<h3>Frontend Developer</h3>
 			</div>
 
 			<div className={styles.navBody}>
 				<div className={styles.avatar}>
-					<Profile src="/images/profile-img.png" className="Default" />
+					<Profile src="/images/profile.webp" className="Default" />
 				</div>
 
 				<div className={styles.navButtons}>

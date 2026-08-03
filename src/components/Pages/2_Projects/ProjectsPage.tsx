@@ -1,10 +1,15 @@
 import styles from "./Projects.module.css";
-import projects from "../../../assets/Data/Projects.json";
+import projectsData from "../../../assets/Data/Projects.json";
+import type { projectProps } from "../../../lib/types";
 import Picture from "../../Picture/Picture";
 import Grid from "../../Grid/Grid";
 
 function Projects() {
-	const latestProject = projects.find((latest) => latest.category === "latest");
+	const projects = projectsData as projectProps[];
+
+	const latestProject = projectsData.find(
+		(latest) => latest.category === "latest",
+	);
 
 	return (
 		<div className="pageContainer">
