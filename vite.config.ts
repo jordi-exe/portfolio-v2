@@ -7,4 +7,5 @@ export default defineConfig({
 		port: 3000, // change here
 	},
 	plugins: [react()],
+	base: "/portfolio-v2/",
 });
