@@ -125,7 +125,8 @@
 	/* flex: 1; */
 	display: flex;
 	height: 100%;
-	flex-flow: column nowrap;
+	align-items: end;
+	flex-flow: row wrap;
 
 	div {
 		padding: 0.5rem;
