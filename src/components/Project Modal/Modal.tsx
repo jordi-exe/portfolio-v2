@@ -97,8 +97,9 @@ function Project({ project, onClose }: ModalProps) {
 					</div>
 
 					<div className={styles.statusContainer}>
-						<div>{project.owner}</div>
 						<div>{project.progress}</div>
+						<div>{project.owner}</div>
+
 						{project.link ? (
 							<a href={project.link} target="_blank">
 								View Project
