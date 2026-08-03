@@ -10,7 +10,7 @@ type gridProps = {
 	categories?: string[];
 };
 
-const ENTRANCE_STAGGER_S = 0.1;
+const ENTRANCE_STAGGER_S = 0.01;
 const ENTRANCE_DURATION_S = 0.3;
 const INITIAL_ENTRANCE_DELAY_MS = 300;
 
