@@ -50,30 +50,30 @@ function Canvas() {
 	//Animation Code Ends
 
 	//Gradient Mouse Follow
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-	const containerRef = useRef<HTMLDivElement>(null);
+	// const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	// const containerRef = useRef<HTMLDivElement>(null);
 
-	const handleMouseMove = (e: React.MouseEvent) => {
-		const rect = containerRef.current?.getBoundingClientRect();
+	// const handleMouseMove = (e: React.MouseEvent) => {
+	// 	const rect = containerRef.current?.getBoundingClientRect();
 
-		if (!rect) return;
+	// 	if (!rect) return;
 
-		const x = e.clientX - rect.left;
-		const y = e.clientY - rect.top;
+	// 	const x = e.clientX - rect.left;
+	// 	const y = e.clientY - rect.top;
 
-		setMousePosition({ x, y });
-	};
+	// 	setMousePosition({ x, y });
+	// };
 	//GMF Ends
 
 	return (
 		<Layout onNav={setIndex}>
 			<div
-				ref={containerRef}
+				// ref={containerRef}
 				className={styles.container}
-				onMouseMove={handleMouseMove}
-				style={{
-					backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #004BB3, #001737 20%)`,
-				}}
+				// onMouseMove={handleMouseMove}
+				// style={{
+				// 	backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #004BB3, #001737 20%)`,
+				// }}
 			>
 				{transitions((style, i) => {
 					const Page = pages[i];
