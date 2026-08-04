@@ -3,7 +3,7 @@
 		"category": "game dev",
 		"title": "Mario & Luigi: Star Journey",
 		"featuredImg": "/images/Projects/GameDev/StarJourney/StarJourneyThumbnail.webp",
-		"modalLogo": "/images/experience/journey_team/StarJourney.png",
+		"modalLogo": "/logos/personal/journey_team/JTLogo.webp",
 		"summary": "A love letter to the Mario & Luigi franchise, I currently help out as Lead 3D Modeler and Co-Director alongside a wonderful team of individuals making this just for the love of the game, no financial benefit whatsoever.\n\n Although it's still early in development, we've been using this as the perfect chance to learn the basics of organizational work within game development in order for us to properly train ourselves for official game development work in the future, no matter how long it may take.",
 		"childImg": [
 			{
@@ -85,6 +85,7 @@
 		"category": "game dev",
 		"title": "Purga-Story Demo",
 		"featuredImg": "/images/Projects/GameDev/PurgaStory/PurgaStoryThumbnail.webp",
+		"modalLogo": "/logos/personal/journey_team/JTLogo.webp",
 		"summary": "The blood moon rises in this spooky Metroidvania. Local newly-dead ghost girl Claire has been awakened by the blood moon. With no memories and only a vague idea of who she is, she must brave the terrors of the living world with her ghastly abilities to reclaim her past and get her closure, before she is locked in purgatory forever. Also there is a skull there too, I suppose.\n\n A gameboy game made for GBJam 12, ranking 24th out of 396 entries.",
 		"childImg": [
 			{
@@ -116,6 +117,7 @@
 		"category": "game dev",
 		"title": "Everbloom Dreams: Elusion Session",
 		"featuredImg": "/images/Projects/GameDev/EverbloomDreams/EverbloomThumbnail.webp",
+		"modalLogo": "/logos/personal/journey_team/JTLogo.webp",
 		"featuredSummary": "Adventure through your dreams and collect the Aspects of yourself, and escape through the clocktower. Make sure you are careful though, for every serene and peaceful dream there's a nightmare, every so often you'll come across a nightmare, you will gradually lose your Aspects as you spend more lingering in the nightmare. \n\n Everbloom Dreams Elusion Session is a game made by the Journey Team that takes some inspiration from Pikmin and some from the aesthetics of Nintendo DS games.",
 		"childImg": [
 			{
